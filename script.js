@@ -1,3 +1,10 @@
+const rock = document.getElementById('rock');
+rock.addEventListener('click', myFunction);
+
+function myFunction(){
+    console.log(playRound("rock"))
+}
+
 function getComputerChoice(){
     let number = Math.floor(Math.random()*3);
 
@@ -16,9 +23,9 @@ function getPlayerChoice(){
     return prompt("Please enter: Rock, Paper or Scissors: ").toLowerCase();
 }
 
-function playRound(){
+function playRound(btnPlayerChoice){
     const computerChoice = getComputerChoice();
-    const playerChoice = getPlayerChoice();
+    const playerChoice = btnPlayerChoice
     console.log(computerChoice);
     console.log(playerChoice);
     if (computerChoice == "paper") {
