@@ -63,7 +63,7 @@ function startGame(){
     scoreP = 0;
     scoreC = 0;
 
-    start.textContent = "Restart"; 
+    start.textContent = ""; 
 
     postScore();
 
