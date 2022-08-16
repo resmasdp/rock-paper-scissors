@@ -24,3 +24,7 @@
 .scorebox{
     border-style: solid;
 }
+
+#textScore{
+    font-size: 50px;
+}

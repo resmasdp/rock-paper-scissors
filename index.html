@@ -11,8 +11,7 @@
 <body>
 
     <div id="container">
-        <button type="button" id="start">START GAME!!</button>
-        
+        <button type="button" class="choices" id="start">Start</button>
         <div id="choices">
             <button type="button" class="choices" id="rock">ROCK</button>
             <button type="button" class="choices" id="paper">PAPER</button>
@@ -21,17 +20,19 @@
 
         <div id="score">
 
-            <div id="scorecomputer">
+            <div>
                 <p>Computer</p>
-                <div class="scorebox">0</div>
+                <div class="scorebox" id="scorecomputer">0</div>
             </div>
 
-            <div id="scoreplayer">
+            <div>
                 <p>Player</p>
-                <div class="scorebox">0</div>
+                <div class="scorebox" id="scoreplayer">0</div>
             </div>
 
         </div>
+
+        <div id="textScore"></div>
     
     </div>
 
